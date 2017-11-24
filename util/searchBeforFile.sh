@@ -1,5 +1,6 @@
 #!/bin/bash
 set -eu
+echo "=============================search start==================================="
 #set -euxo pipefail
 start=$1
 end=$2
@@ -18,10 +19,22 @@ if [ ! -f "$end" ];
        rm -rf t_end
        touch -t $end t_end
 fi
-function search()
+search()
 {
 find . -type f -newer t_start ! -newer t_end | xargs ls -l | grep -v "t_start\|t_end"
 }
+delete()
+{
+  if [ -f t_end ];
+    then
+      rm -rf t_end
+  fi
+  if [ -f t_start ];
+    then
+      rm -rf t_start
+  fi
+}
 search
-
+delete
+echo "===========================search end========================================"
 
