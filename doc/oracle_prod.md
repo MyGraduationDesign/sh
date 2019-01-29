@@ -1,4 +1,6 @@
-﻿--查看回收站的当前状态  果返回值为“on”表明回收站是启动的，“off”表明是关闭的
+﻿# oracle生产常用sql
+```
+--查看回收站的当前状态  果返回值为“on”表明回收站是启动的，“off”表明是关闭的
 SELECT Value FROM V$parameter WHERE Name = 'recyclebin';
 
 --启动或者关闭回收站里的每个会话（session）和系统（system）
@@ -52,3 +54,4 @@ SELECT SID,SERIAL# FROM V$SESSION WHERE SID='1314';
 --3. 杀掉查找出来的进程
 --alter system kill session 'SID,SERIAL#'
 alter system kill session '1314,63759';  
+```

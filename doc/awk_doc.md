@@ -1,3 +1,5 @@
+# awk命令基本使用
+```
 #!/usr/bin/awk -f
 
 # 注释使用井号
@@ -300,3 +302,4 @@ END {
     if (nlines)
         print "The average age for " name " is " sum / nlines
 }
+```

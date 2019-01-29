@@ -1,0 +1,7 @@
+ubuntu   pts/0        114.247.245.82   Tue Jan 29 15:09   still logged in
+ubuntu   pts/0        114.247.245.82   Tue Jan 22 15:12 - 15:13  (00:00)
+ubuntu   pts/0        114.247.245.82   Wed Jan 16 15:45 - 17:56  (02:11)
+ubuntu   pts/0        114.247.245.82   Wed Jan 16 13:45 - 14:06  (00:21)
+ubuntu   pts/0        114.247.245.82   Tue Jan 15 10:14 - 12:31  (02:17)
+
+wtmp begins Wed Jan  2 09:50:49 2019
